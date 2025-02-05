@@ -17,7 +17,7 @@ function calculateDiscount() {
     let currencySymbol = (currency === "usd") ? "$" : "Rp";
     let formattedPrice = (currency === "usd") ? discountedPrice.toFixed(2) : discountedPrice.toLocaleString("id-ID");
 
-    let resultText = `Original Price: ${currencySymbol}${price.toLocaleString("id-ID")}\nDiscount: ${discount}%\nFinal Price: ${currencySymbol}${formattedPrice}`;
+    let resultText = `Harga Asli: ${currencySymbol}${price.toLocaleString("id-ID")}\nDiskon: ${discount}%\nHarga Diskon: ${currencySymbol}${formattedPrice}`;
 
     showDialog(resultText);
 }
