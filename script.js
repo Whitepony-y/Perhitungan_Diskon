@@ -4,12 +4,12 @@ function calculateDiscount() {
     let currency = document.getElementById("currency").value;
     
     if (isNaN(price) || isNaN(discount)) {
-        alert("Enter valid numbers!");
+        alert("Masukan Angka Valid!");
         return;
     }
 
     if (discount < 0 || discount > 100) {
-        alert("Discount must be between 0 and 100!");
+        alert("Diskon tidak boleh melebihi 100!");
         return;
     }
 
